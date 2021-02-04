@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Portfolio Single page style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-single-holder {
+	@include edgtfRelativeHolderLayout();
+	margin: 0 0 50px;
+	
+    .edgtf-ps-image-holder {
+	    @include edgtfRelativeHolderLayout();
+	    
+	    .edgtf-ps-image {
+		    
+		    &:not(.edgtf-item-space) {
+			    @include edgtfRelativeHolderLayout();
+			    box-sizing: border-box;
+		    }
+		    
+		    a, img {
+			    position: relative;
+			    display: block;
+		    }
+	    }
+    }
+	
+	.edgtf-ps-info-holder {
+		@include edgtfRelativeHolderLayout();
+		
+		.edgtf-ps-info-item {
+			@include edgtfRelativeHolderLayout();
+			margin: 0 0 10px;
+			
+			p, a {
+				margin: 0;
+                display: inline-block;
+                font-size: 17px;
+                color: $default-text-color;
+			}
+
+            a:hover {
+                color: $first-main-color
+            }
+
+			&.edgtf-ps-social-share {
+				.edgtf-social-title {
+					display: none;
+				}
+
+                a {
+                    font-size: 14px;
+                    margin: 0 8px 0 0;
+                    color: #fff;
+
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+			}
+		}
+		
+		.edgtf-ps-info-title {
+			margin: 0;
+            display: inline-block;
+            padding: 0 22px 0 0;
+		}
+	}
+}
+
+/* ==========================================================================
+   Portfolio Single page style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - begin
+   ========================================================================== */
+
+.edgtf-portfolio-single-holder {
+	
+	.edgtf-ps-image-holder {
+		
+		&.edgtf-grid-masonry-list {
+			
+			.edgtf-ps-image {
+				
+				a {
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single page specific style for types - end
+   ========================================================================== */

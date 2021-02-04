@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Author Info widget style - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+.edgtf-author-info-widget {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edgtf-author-info-widget .edgtf-aiw-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.edgtf-author-info-widget .edgtf-aiw-image img {
+  display: block;
+}
+
+.edgtf-author-info-widget .edgtf-aiw-content-wrapper {
+  padding: 25px 30px 30px;
+}
+
+.edgtf-author-info-widget .edgtf-aiw-title {
+  margin: 0;
+  text-transform: lowercase;
+}
+
+.edgtf-author-info-widget .edgtf-aiw-text {
+  display: block;
+  margin: 10px 0 0;
+}
+
+.edgtf-author-info-widget .edgtf-author-social-icons {
+  padding: 10px 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.edgtf-author-info-widget .edgtf-author-social-icons > a {
+  padding-right: 20px;
+  font-size: 13px;
+}
+
+.edgtf-author-info-widget .edgtf-author-social-icons > a:last-child {
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-author-info-widget .edgtf-aiw-image {
+    width: 50%;
+  }
+  .edgtf-author-info-widget .edgtf-aiw-content-wrapper {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-author-info-widget .edgtf-aiw-image {
+    width: 100%;
+  }
+  .edgtf-author-info-widget .edgtf-aiw-content-wrapper {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Author Info widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=author-info-widget-map.css.map */

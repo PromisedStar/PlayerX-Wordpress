@@ -1,0 +1,8 @@
+.edgtf-match-list-widget {
+
+    .edgtf-match-info {
+        > *:not(.edgtf-match-meta) {
+            display: none !important;
+        }
+    }
+}

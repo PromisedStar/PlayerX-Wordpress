@@ -1,0 +1,113 @@
+/* ==========================================================================
+   Twitter widget style - begin
+   ========================================================================== */
+
+.widget.widget_edgtf_twitter_widget {
+	margin: 0 0 20px;
+	
+	.edgtf-twitter-widget {
+		@include edgtfRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		
+		li {
+			@include edgtfRelativeHolderLayout();
+            padding: 15px 20px;
+            margin: 0 0 5px;
+            border-bottom: 1px solid rgba(255,255,255,.05);
+            box-sizing: border-box;
+
+            &:last-child {
+                padding-bottom: 15px;
+            }
+			
+			.edgtf-twitter-icon {
+				font-size: 18px;
+				color: $first-main-color;
+			}
+			
+			.edgtf-tweet-text {
+				position: relative;
+				
+				span {
+					color: $default-text-color;
+				}
+				
+				a {
+					position: relative;
+					color: $default-text-color;
+					
+					&:hover {
+						color: $first-main-color;
+					}
+					
+					&.edgtf-tweet-time {
+						display: block;
+						
+						span {
+							margin: 0 2px 0 0;
+						}
+					}
+				}
+			}
+		}
+		
+		&.edgtf-twitter-standard {
+			
+			li {
+				
+				.edgtf-twitter-icon {
+					position: absolute;
+					top: 18px;
+					left: 20px;
+				}
+				
+				.edgtf-tweet-text {
+					padding: 0 0 0 40px;
+				}
+			}
+		}
+		
+		&.edgtf-twitter-slider {
+			@include edgtfRelativeHolderLayout();
+			padding: 20px 40px;
+			text-align: center;
+			box-sizing: border-box;
+			
+			li {
+				overflow: hidden;
+				padding-top: 0;
+				
+				.edgtf-tweet-text {
+					
+					a {
+						
+						&.edgtf-tweet-time {
+							margin: 21px 0 0;
+						}
+					}
+				}
+			}
+			
+			.owl-nav {
+				
+				.owl-prev {
+					left: 0;
+				}
+				
+				.owl-next {
+					right: 0;
+				}
+			}
+
+			@include phone-landscape {
+				padding: 20px;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Twitter widget style - end
+   ========================================================================== */

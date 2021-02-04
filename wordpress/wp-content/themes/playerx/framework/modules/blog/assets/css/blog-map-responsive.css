@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Blog responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+@media only screen and (max-width: 1366px) {
+  .edgtf-blog-holder article.format-gallery .edgtf-blog-gallery .owl-stage-outer {
+    -webkit-clip-path: inset(0 1px 0 0);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-blog-holder article.format-quote .edgtf-post-text, .edgtf-blog-holder article.format-link .edgtf-post-text {
+    padding: 40px 20px;
+  }
+  .edgtf-blog-holder article.format-quote .edgtf-post-mark, .edgtf-blog-holder article.format-link .edgtf-post-mark {
+    display: none;
+  }
+  .edgtf-blog-holder article .edgtf-post-info-bottom .edgtf-post-info-bottom-left > div.edgtf-post-info-author {
+    margin: 8px 37% 8px 0;
+  }
+  .edgtf-blog-holder article .edgtf-post-info-bottom .edgtf-post-info-bottom-left > div.edgtf-post-info-comments-holder {
+    margin-left: 0;
+  }
+  .edgtf-blog-holder article .edgtf-post-info-top > div.edgtf-post-info-date {
+    margin-bottom: 8px;
+  }
+  .edgtf-related-posts-holder .edgtf-related-posts-title > *,
+  .edgtf-comment-holder .edgtf-comments-title,
+  .edgtf-comment-form .comment-reply-title {
+    padding: 13px 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-related-posts-holder .edgtf-related-post {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgtf-related-posts-holder .edgtf-related-post {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-blog-holder.edgtf-blog-single article .edgtf-post-info-bottom .edgtf-post-info-bottom-left,
+  .edgtf-blog-holder.edgtf-blog-single article .edgtf-post-info-bottom .edgtf-post-info-bottom-right {
+    width: 100%;
+    float: none;
+  }
+  .edgtf-blog-holder.edgtf-blog-single article .edgtf-post-info-bottom .edgtf-post-info-bottom-right {
+    text-align: inherit;
+    margin: 10px 0 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-blog-list-holder.edgtf-bl-standard .edgtf-bli-content {
+    max-width: 310px;
+    padding: 17px 15px 10px;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+  .edgtf-blog-list-holder.edgtf-bl-standard .edgtf-bli-content .edgtf-post-excerpt-holder {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .edgtf-blog-slider-holder .edgtf-item-text-wrapper {
+    max-width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgtf-blog-slider-holder .edgtf-item-text-wrapper {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-blog-slider-holder .edgtf-item-text-wrapper {
+    padding: 22px 20px 19px;
+    max-width: 75%;
+  }
+  .edgtf-blog-slider-holder.edgtf-bs-carousel-centered .active.center .edgtf-item-text-wrapper {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-blog-slider-holder .edgtf-item-text-wrapper {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+  .edgtf-blog-slider-holder .edgtf-post-excerpt-holder {
+    display: none;
+  }
+  .edgtf-blog-slider-holder.edgtf-bs-carousel-centered .active .edgtf-item-text-wrapper {
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-map-responsive.css.map */

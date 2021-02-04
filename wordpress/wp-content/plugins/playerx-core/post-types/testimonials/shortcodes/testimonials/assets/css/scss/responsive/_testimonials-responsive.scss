@@ -1,0 +1,38 @@
+@include ipad-landscape {
+    .edgtf-testimonials-holder {
+
+        &.edgtf-testimonials-standard .edgtf-testimonial-text {
+            padding: 0 6%;
+        }
+    }
+}
+
+@include ipad-portrait {
+    .edgtf-testimonials-holder {
+
+        &.edgtf-testimonials-standard .edgtf-testimonial-text {
+            padding: 0 25px;
+        }
+
+        .edgtf-testimonials {
+            padding: 0 25px;
+        }
+
+        .owl-nav {
+            display: none;
+        }
+    }
+}
+
+@include phone-landscape {
+    .edgtf-testimonials-holder {
+
+        .edgtf-testimonials {
+            padding: 0 10px;
+        }
+
+        &.edgtf-testimonials-standard .edgtf-testimonial-text {
+            padding: 0 10px;
+        }
+    }
+}

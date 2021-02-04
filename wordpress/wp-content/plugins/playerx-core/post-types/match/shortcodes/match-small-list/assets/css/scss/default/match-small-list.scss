@@ -1,0 +1,157 @@
+.edgtf-match-small-list-holder {
+    @include edgtfRelativeHolderLayout();
+
+    article {
+        @include edgtfRelativeHolderLayout();
+        padding: 7px 20px 7px 10px;
+        box-sizing: border-box;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $default-border-color;
+        }
+
+        .edgtf-match-item-holder {
+            display: table;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+            > * {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .edgtf-match-single-team {
+                width: 42px;
+
+                .edgtf-match-item-image-holder {
+                    vertical-align: middle;
+                }
+
+                img {
+                    vertical-align: middle;
+                }
+            }
+
+            .edgtf-match-info {
+                padding-left: 17px;
+                .edgtf-match-team-title {
+                    display: inline-block;
+                    margin: 0;
+                }
+
+                > span {
+                    color: $default-heading-color;
+                }
+
+                .edgtf-match-meta {
+                    font-size: 13px;
+                    line-height: 1em;
+
+                    .edgtf-match-category-holder {
+                        text-transform: uppercase;
+                        &:not(:last-child):after {
+                            content: ' / ';
+                        }
+                    }
+
+                }
+            }
+
+            .edgtf-match-vs-image {
+                width: 42px;
+                text-align: center;
+                > {
+                    img {
+                        width: 18px;
+                        vertical-align: text-top;
+                    }
+                }
+            }
+
+            .edgtf-match-result-holder,
+            .edgtf-match-stream-holder,
+            .edgtf-match-canceled-holder {
+                text-align: right;
+                color: $default-heading-color;
+                font-size: 17px;
+                line-height: 1.53em;  /* 26/17 */
+            }
+
+            .edgtf-match-canceled-holder {
+                width: 60px;
+            }
+
+            .edgtf-match-result-holder {
+                font-family: $default-text-font;
+                font-weight: 700;
+                letter-spacing: 0.02em;
+                width: 60px;
+            }
+
+            .edgtf-match-stream-holder {
+                position: relative;
+                width: 30px;
+                z-index: 10;
+            }
+
+        }
+
+        .edgtf-match-link {
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #0d0d0d;
+            background: -moz-linear-gradient(left,rgba(15,15,15,.8) 0,#540e0f 50%,rgba(15,15,15,.8) 100%);
+            background: -webkit-linear-gradient(left,rgba(15,15,15,.8) 0,#540e0f 50%,rgba(15,15,15,.8) 100%);
+            background: linear-gradient(to right,rgba(15,15,15,.8) 0,#540e0f 50%,rgba(15,15,15,.8) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(15,15,15,.8)', endColorstr='rgba(15,15,15,.8)', GradientType=1 );
+            opacity: 0;
+            -webkit-transition: .6s cubic-bezier(.645,.045,.355,1);
+            -moz-transition: .6s cubic-bezier(.645,.045,.355,1);
+            transition: .6s cubic-bezier(.645,.045,.355,1);
+        }
+
+        &:hover {
+            &:after {
+                opacity: .5;
+                @include edgtfTransition(.6s $default-easing);
+            }
+        }
+    }
+
+    &.edgtf-match-skin-light {
+        article {
+
+            color: $default-text-color-dark;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $default-border-color;
+            }
+
+            .edgtf-match-item-holder {
+                .edgtf-match-result-holder {
+                    color: #fff;
+                }
+            }
+
+            .edgtf-match-info > span,
+            .edgtf-match-title,
+            .edgtf-match-team-title {
+                color: #fff;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+
+.edgtf-btn {
+    @include edgtfButtonDefaultStyle();
+    @include edgtfButtonSize();
+    cursor: pointer;
+    
+    &.edgtf-btn-glow{
+        @include edgtfTransition(.5s cubic-bezier(0.22, 0.61, 0.36, 1));
+
+        &:hover {
+            -webkit-filter: drop-shadow(3px 3px 20px rgba($first-main-color,.7));
+            filter: drop-shadow(3px 3px 20px rgba($first-main-color,.7));
+        }
+    }
+    
+    &.edgtf-btn-simple {
+        padding: 0 !important;
+        color: $default-heading-color;
+        background-color: transparent;
+        border: 0;
+        vertical-align: middle;
+
+        .edgtf-btn-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &:not(.edgtf-btn-glow) {
+            &:not(.edgtf-btn-custom-hover-color):hover {
+                //important because of inline color attribute. :not is used so we don't have to use important in JS
+                color: $first-main-color!important;
+            }
+
+            &:not(.edgtf-btn-custom-hover-bg):hover {
+                //important because of inline color attribute. :not is used so we don't have to use important in JS
+                background-color: transparent !important;
+            }
+
+            &:not(.edgtf-btn-custom-border-hover):hover {
+                //important because of inline color attribute. :not is used so we don't have to use important in JS
+                border-color: transparent !important;
+            }
+        }
+
+        &.edgtf-btn-glow {
+            &:hover {
+                text-shadow: 0px 0px 20px rgba(#fff, .7);
+            }
+        }
+    }
+
+    &.edgtf-btn-solid {
+        @include edgtfButtonSolidColor();
+
+        &:not(.edgtf-btn-glow) {
+            &:not(.edgtf-btn-custom-hover-color):hover {
+                //important because of inline color attribute. :not is used so we don't have to use important in JS
+                color: $first-main-color !important;
+            }
+
+            &:not(.edgtf-btn-custom-hover-bg):hover {
+                //important because of inline color attribute. :not is used so we don't have to use important in JS
+                background-color: $default-heading-color !important;
+                &.edgtf-btn-trapeze-shape {
+                    .edgtf-btn-trapeze-left-side,
+                    .edgtf-btn-trapeze-right-side {
+                        border-top-color: $default-heading-color;
+                    }
+                }
+            }
+
+            &:not(.edgtf-btn-custom-border-hover):hover {
+                //important because of inline color attribute. :not is used so we don't have to use important in JS
+                border-color: $default-heading-color !important;
+            }
+        }
+
+        &.edgtf-btn-trapeze-shape {
+            border: none;
+
+            &.edgtf-btn-small {
+                padding: 12px 36px;
+            }
+
+            &.edgtf-btn-medium {
+                padding: 14px 46px;
+            }
+
+            &.edgtf-btn-large {
+                padding: 14px 66px;
+            }
+
+            .edgtf-btn-trapeze-left-side {
+                position: absolute;
+                top: 0;
+                left: -15px;
+                width: 0;
+                height: 0;
+                border-top: 54px solid $first-main-color;
+                border-left: 15px solid transparent;
+                @include edgtfTransition(border-color .2s ease-in-out);
+            }
+
+            .edgtf-btn-trapeze-right-side {
+                position: absolute;
+                top: 0;
+                right: -15px;
+                width: 0;
+                height: 0;
+                border-top: 54px solid $first-main-color;
+                border-right: 15px solid transparent;
+                @include edgtfTransition(border-color .2s ease-in-out);
+            }
+        }
+
+        &.edgtf-solid-btn-with-shadow {
+            box-shadow: 0px 3px 3px 0px rgba(1, 1, 1, 0.55);
+        }
+    }
+
+    &.edgtf-btn-outline {
+	    @include edgtfButtonOutlineColor();
+
+        &:not(.edgtf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.edgtf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $first-main-color !important;
+        }
+
+        &:not(.edgtf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $first-main-color !important;
+        }
+    }
+    
+    &.edgtf-btn-small {
+        @include edgtfButtonSize(small);
+    }
+    
+    &.edgtf-btn-large {
+        @include edgtfButtonSize(large);
+    }
+    
+    &.edgtf-btn-huge {
+        @include edgtfButtonSize(huge);
+    }
+
+    &.edgtf-btn-icon {
+
+        > i,
+        > span:not(.edgtf-btn-text) {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 0 0 4px;
+            font-size: 1.142857142857143em;
+            line-height: inherit;
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */

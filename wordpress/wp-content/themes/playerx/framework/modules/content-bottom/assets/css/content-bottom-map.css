@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Content Bottom styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   #Content bottom styles - begin
+   ========================================================================== */
+.edgtf-content-bottom .widget > * {
+  background-color: transparent;
+}
+
+.edgtf-content-bottom .widget:last-child {
+  margin-bottom: 0;
+}
+
+.edgtf-content-bottom .edgtf-content-bottom-inner {
+  box-sizing: border-box;
+}
+
+.edgtf-content-bottom .edgtf-content-bottom-inner.edgtf-grid {
+  padding: 27px 0;
+}
+
+.edgtf-content-bottom .edgtf-content-bottom-inner.edgtf-full-width {
+  padding: 27px 40px;
+}
+
+/* ==========================================================================
+   #Content bottom styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Content Bottom styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=content-bottom-map.css.map */

@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Footer styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Footer style - begin
+   ========================================================================== */
+.edgtf-page-footer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.edgtf-page-footer .edgtf-footer-top-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: rgba(15, 15, 15, 0.8);
+  box-sizing: border-box;
+}
+
+.edgtf-page-footer .edgtf-footer-top-holder .edgtf-footer-top-alignment-center {
+  text-align: center;
+}
+
+.edgtf-page-footer .edgtf-footer-top-holder .edgtf-footer-top-alignment-left {
+  text-align: left;
+}
+
+.edgtf-page-footer .edgtf-footer-top-holder .edgtf-footer-top-alignment-right {
+  text-align: right;
+}
+
+.edgtf-page-footer .edgtf-footer-top-holder .edgtf-footer-top-inner {
+  box-sizing: border-box;
+}
+
+.edgtf-page-footer .edgtf-footer-top-holder .edgtf-footer-top-inner.edgtf-grid {
+  padding: 76px 0;
+}
+
+.edgtf-page-footer .edgtf-footer-top-holder .edgtf-footer-top-inner.edgtf-full-width {
+  padding: 76px 40px;
+}
+
+.edgtf-page-footer .edgtf-footer-bottom-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: rgba(15, 15, 15, 0.8);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.edgtf-page-footer .edgtf-footer-bottom-holder .edgtf-footer-bottom-inner {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.edgtf-page-footer .edgtf-footer-bottom-holder .edgtf-footer-bottom-inner.edgtf-grid {
+  padding: 17px 0 0;
+}
+
+.edgtf-page-footer .edgtf-footer-bottom-holder .edgtf-footer-bottom-inner.edgtf-full-width {
+  padding: 17px 40px 0;
+}
+
+.edgtf-page-footer .edgtf-footer-bottom-holder .edgtf-footer-bottom-inner .edgtf-footer-bottom-left-inner-border-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 100%;
+  z-index: -1;
+  border-left: 1px solid #000;
+  -webkit-transform: skewX(15deg);
+  -moz-transform: skewX(15deg);
+  transform: skewX(15deg);
+}
+
+.edgtf-page-footer .edgtf-footer-bottom-holder .edgtf-footer-bottom-inner .edgtf-footer-bottom-right-inner-border-holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 105%;
+  height: 100%;
+  border-right: 1px solid #000;
+  z-index: -1;
+  -webkit-transform: skewX(-15deg);
+  -moz-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+}
+
+.no-touch body:not(.error404) .edgtf-page-footer.edgtf-footer-uncover {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  -webkit-transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -moz-transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+
+.edgtf-right-side-menu-opened .edgtf-page-footer.edgtf-footer-uncover {
+  left: -270px;
+}
+
+/* ==========================================================================
+   Footer style - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=footer-map.css.map */

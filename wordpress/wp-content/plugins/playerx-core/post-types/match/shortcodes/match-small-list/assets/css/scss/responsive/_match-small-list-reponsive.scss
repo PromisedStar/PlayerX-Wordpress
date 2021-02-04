@@ -1,0 +1,39 @@
+@include phone-landscape {
+    .edgtf-match-small-list-holder {
+        article {
+            .edgtf-match-item-holder {
+                display: inline-block;
+                vertical-align: middle;
+                > * {
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    &.edgtf-match-single-team {
+                        width: 30%;
+                        float: left;
+                    }
+                    &.edgtf-match-vs-image {
+                        width: 40%;
+                        float: left;
+                        padding: 20px 0 0 0;
+                    }
+                    &.edgtf-match-info {
+                        width: 100%;
+                        text-align: center;
+                        padding: 15px 0 0 0;
+                    }
+                    &.edgtf-match-result-holder {
+                        padding: 15px 0 0 0;
+                        text-align: center;
+                        width: 100%;
+                    }
+                    &.edgtf-match-stream-holder {
+                        padding: 15px 0 0 0;
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

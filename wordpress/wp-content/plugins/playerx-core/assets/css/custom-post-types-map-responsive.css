@@ -1,0 +1,231 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder {
+    width: 64%;
+    padding: 50px 0 45px;
+  }
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder .edgtf-match-vs-image {
+    width: 180px;
+    padding: 0 25px;
+  }
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder .edgtf-match-single-team {
+    width: calc(50% - 90px);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder {
+    width: 52%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .single-match-item .edgtf-match-single-scoreboard {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder {
+    width: 65%;
+  }
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder .edgtf-match-vs-image {
+    width: 140px;
+    padding: 0 20px;
+  }
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder .edgtf-match-single-team {
+    width: calc(50% - 70px);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .single-match-item .edgtf-match-single-scoreboard {
+    height: auto;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder {
+    display: block;
+    width: 90%;
+    padding: 40px 0;
+  }
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-image-holder {
+    display: none;
+  }
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder .edgtf-match-vs-image {
+    width: 60px;
+    padding: 0 10px;
+    display: block;
+    margin: 0 auto;
+  }
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder .edgtf-match-single-team {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .single-match-item .edgtf-match-single-scoreboard .edgtf-match-item-holder .edgtf-match-single-team .edgtf-match-team-title {
+    margin: 0;
+  }
+  .single-match-item .edgtf-match-info-item {
+    display: block;
+  }
+  .single-match-item .edgtf-match-info-item h4 {
+    display: block;
+  }
+  .single-match-item .edgtf-match-info-item h4.edgtf-match-single-result-holder {
+    text-align: left;
+    margin-top: 15px;
+  }
+  .single-match-item .edgtf-single-match-content-box {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-match-list-holder article {
+    padding: 20px 30px 26px;
+  }
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-info {
+    padding-left: 12px;
+  }
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-info .edgtf-match-category {
+    display: none;
+  }
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-result-holder {
+    padding-right: 0;
+  }
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-stream-holder span {
+    display: none;
+  }
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-stream-holder i {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-match-list-holder article {
+    padding: 20px 20px 26px;
+  }
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-single-team {
+    width: 110px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-match-list-holder article {
+    padding: 20px 20px 36px;
+  }
+  .edgtf-match-list-holder article .edgtf-match-item-holder {
+    display: block;
+  }
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-single-team,
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-vs-image {
+    display: none;
+  }
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-info {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-stream-holder,
+  .edgtf-match-list-holder article .edgtf-match-item-holder .edgtf-match-result-holder {
+    display: block;
+    text-align: left;
+    padding-left: 0;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-match-small-list-holder article .edgtf-match-item-holder {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .edgtf-match-small-list-holder article .edgtf-match-item-holder > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .edgtf-match-small-list-holder article .edgtf-match-item-holder > *.edgtf-match-single-team {
+    width: 30%;
+    float: left;
+  }
+  .edgtf-match-small-list-holder article .edgtf-match-item-holder > *.edgtf-match-vs-image {
+    width: 40%;
+    float: left;
+    padding: 20px 0 0 0;
+  }
+  .edgtf-match-small-list-holder article .edgtf-match-item-holder > *.edgtf-match-info {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 0 0;
+  }
+  .edgtf-match-small-list-holder article .edgtf-match-item-holder > *.edgtf-match-result-holder {
+    padding: 15px 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+  .edgtf-match-small-list-holder article .edgtf-match-item-holder > *.edgtf-match-stream-holder {
+    padding: 15px 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+.edgtf-portfolio-single-holder .edgtf-ps-image-holder.edgtf-ps-gallery-images {
+  /***** Columns Layout - end *****/
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-portfolio-single-holder .edgtf-ps-image-holder.edgtf-ps-gallery-images .edgtf-ps-image {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-portfolio-single-holder .edgtf-ps-info-holder {
+    margin: 30px 0 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgtf-testimonials-holder.edgtf-testimonials-standard .edgtf-testimonial-text {
+    padding: 0 6%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-testimonials-holder.edgtf-testimonials-standard .edgtf-testimonial-text {
+    padding: 0 25px;
+  }
+  .edgtf-testimonials-holder .edgtf-testimonials {
+    padding: 0 25px;
+  }
+  .edgtf-testimonials-holder .owl-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-testimonials-holder .edgtf-testimonials {
+    padding: 0 10px;
+  }
+  .edgtf-testimonials-holder.edgtf-testimonials-standard .edgtf-testimonial-text {
+    padding: 0 10px;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/playerx-core/assets/css/custom-post-types-map-responsive.css.map */

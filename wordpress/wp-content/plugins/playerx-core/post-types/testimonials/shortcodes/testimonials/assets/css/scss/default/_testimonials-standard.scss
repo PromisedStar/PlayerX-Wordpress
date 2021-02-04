@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+
+.edgtf-testimonials-holder {
+    
+    &.edgtf-testimonials-standard {
+        text-align: center;
+
+        .edgtf-testimonial-image {
+            @include edgtfRelativeHolderLayout();
+            margin: 25px 0 0;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .edgtf-testimonial-title {
+            margin: 0;
+        }
+
+        .edgtf-testimonial-author {
+            margin: 36px 0 0;
+        }
+
+        .edgtf-testimonials-author-job {
+            font-size: 13px;
+            color: $default-text-color;
+        }
+
+        .edgtf-testimonial-text {
+            margin: 35px 0 0;
+            padding: 0 10%;
+            font-size: 17px;
+            color: #e0dfe0;
+        }
+
+        /* Light/Dark styles */
+        &.edgtf-testimonials-dark {
+            
+            .edgtf-testimonial-title,
+            .edgtf-testimonial-author,
+            .edgtf-owl-slider .owl-nav .owl-next,
+            .edgtf-owl-slider .owl-nav .owl-prev {
+                color: #383838;
+            }
+
+            .edgtf-owl-slider .owl-nav .owl-next,
+            .edgtf-owl-slider .owl-nav .owl-prev {
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+
+            .edgtf-testimonial-text {
+                color: #333;
+            }
+
+            .edgtf-testimonials-author-job {
+                color: #333;
+            }
+
+            .owl-dots {
+                
+                .owl-dot {
+                    
+                    span {
+                        border: 2px solid rgba(#000, .5);
+                    }
+                    
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: #000;
+                            border-color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */

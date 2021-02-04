@@ -1,0 +1,86 @@
+1.10.1
+- Fixed Instagram Feed for bussiness accounts
+- Updated Playerx Instagram Feed to 2.1 version
+- Updated Revolution Slider plugin to 6.2.23
+- Updated WPBakery Visual Composer plugin to 6.4.1
+
+1.10
+- Updated Playerx Instagram Feed to 2.0 version
+
+1.9
+- Added WordPress 5.5 compatibility
+- Added WooCommerce 4.4.1 compatibility
+- Updated PlayerX Core plugin to 1.1.1
+- Updated Revolution Slider plugin to 6.2.22
+- Updated WPBakery Visual Composer plugin to 6.3.0
+
+1.8
+- Added Playerx Dashboard
+- Added WooCommerce 3.8.1 compatibility
+- Updated Playerx Core to 1.1
+- Updated Playerx child theme to version 1.0.2
+- Updated WPBakery Page Builder to 6.1
+- Updated Revolution Slider to 6.1.5
+- Removed unused file instagram-redirect.php from Playerx Instagram Widget plugin
+- Removed unused file twitter-redirect.php from Playerx Twitter Feed plugin
+- Updated Playerx Instagram Feed plugin to 1.0.2
+- Updated Playerx Twitter Feed plugin to 1.0.2
+- Improved Welcome Page
+- Improved Import
+- Changed Playerx Options Position
+
+1.7.1
+- Fixed Blog List Shortcode excerpt animation
+
+1.7
+- Added WooCommerce 3.7.0 compatibility
+- Updated WPBakery Page Builder to 6.0.5
+- Updated Revolution Slider to 6.1.2
+- Fixed Product List - Simple featured filter
+- Fixed back button when Page Transitions are active
+- Fixed Parallax with zoom out effect on Title Area background image
+- Fixed single page background color option
+- Fixed social share on single posts
+
+1.6
+- Added WooCommerce 3.6.5 compatibility
+- Updated WPBakery Page Builder to 6.0.3
+- Fixed edge gallery uploader
+
+1.5
+- Added WooCommerce 3.6.3 compatibility
+- Updated WPBakery Page Builder to 6.0.2
+- Updated PlayerX Core to 1.0.2
+- Updated Select Twitter Feed to 1.0.1
+- Updated Select Instagram Feed to 1.0.1
+- Updated pot file
+- Updated child theme to 1.0.1
+- Improved theme security
+- Improved import functionality
+- Improved ajax functionality
+
+1.4
+- Added WooCommerce 3.5.6 compatibility
+- Improved framework files
+
+1.3.1
+- Fixed mobile menu opener bug
+
+1.3
+- Added WooCommerce 3.5.5 compatibility
+- Updated WPBakery Page Builder to 5.7
+- Updated Core to 1.0.1
+- Updated Revolution Slider to 5.4.8.3
+- Improved framework files
+
+1.2
+- Added WooCommerce 3.5.4 compatibility
+- Updated WPBakery Page Builder to 5.6
+- Updated Revolution Slider to 5.4.8.2
+
+1.1
+- Added compatibility with Gutenberg plugin
+- Updated Visual Composer to 5.5.4
+- Updated Envato Market to 2.0.0
+- Fixed displaying videos on secured protocol
+- Fixed First Main Color issues

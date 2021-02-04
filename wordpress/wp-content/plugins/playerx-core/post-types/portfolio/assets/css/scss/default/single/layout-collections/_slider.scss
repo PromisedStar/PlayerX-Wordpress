@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Portfolio Single - Slider layout style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-single-holder {
+	
+	&.edgtf-ps-slider-layout {
+		
+		.edgtf-ps-image-holder {
+			margin: 0 0 40px;
+			
+			.edgtf-ps-image-inner {
+				visibility: hidden;
+			}
+			
+			.edgtf-ps-image {
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		.edgtf-ps-info-holder {
+			margin-top: 10px;
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single - Slider layout style - end
+   ========================================================================== */

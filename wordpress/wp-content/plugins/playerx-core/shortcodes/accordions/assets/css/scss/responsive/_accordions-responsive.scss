@@ -1,0 +1,19 @@
+@include phone-landscape {
+    .edgtf-accordion-holder.edgtf-ac-simple {
+        .edgtf-accordion-title {
+            padding: 12px 0 11px 15px;
+        }
+        .edgtf-accordion-content {
+            padding: 30px 15px 48px 15px;
+        }
+    }
+
+    .edgtf-accordion-holder.edgtf-ac-boxed {
+        .edgtf-accordion-title {
+            padding: 12px 0 11px 15px;
+        }
+        .edgtf-accordion-content {
+            padding: 30px 15px 48px 15px;
+        }
+    }
+}
